@@ -38,12 +38,24 @@ export default function AiWorkbench() {
   const [ratio, setRatio] = useState<Ratio>('smart-1-1')
   const [resolution, setResolution] = useState<Resolution>('1K')
   const [count, setCount] = useState<Count>(1)
-  const [selectedTool, setSelectedTool] = useState('ai-detail-page')
+  const [selectedTool, setSelectedTool] = useState<'ai-detail-page' | 'ai-main-image-set' | 'ai-scene'>('ai-detail-page')
   const [showToolDropdown, setShowToolDropdown] = useState(false)
   const [language, _setLanguage] = useState('简体中文')
   const [scenes, setScenes] = useState<SceneItem[]>(defaultSizes)
   const [selectAll, setSelectAll] = useState(false)
   const [isGenerating, setIsGenerating] = useState(false)
+  const [platform, setPlatform] = useState('通用')
+  const [productImages, setProductImages] = useState<string[]>([])
+  const [mainImageTypes, setMainImageTypes] = useState<SceneItem[]>([
+    { id: '0', type: '首页主图', size: '通用', selected: true },
+    { id: '1', type: '细节展示', size: '通用', selected: false },
+    { id: '2', type: '使用场景', size: '通用', selected: false },
+    { id: '3', type: '核心卖点', size: '通用', selected: false },
+    { id: '4', type: '产品痛点', size: '通用', selected: false },
+    { id: '5', type: '材质展示', size: '通用', selected: false },
+  ])
+  const [mainSelectAll, setMainSelectAll] = useState(false)
+  const fileInputRef = useRef<HTMLInputElement>(null)
   const [generatedImages, setGeneratedImages] = useState<string[]>([])
   const [referenceImages, setReferenceImages] = useState<string[]>([])
   const [model, setModel] = useState<Model>('dalle3')

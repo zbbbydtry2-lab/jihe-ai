@@ -23,6 +23,14 @@
       "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInBob25lIjoiZGVtb0BqaWhlYWkuY29tIiwiaWF0IjoxNzgyNTUxNzY1LCJleHAiOjE3ODUxNDM3NjV9.4XjFwrCMF2Esz9-jfmPx4BNIX-3gFdcLLeFMwI6-WKk",
       "created_at": "2026-06-27T09:16:05.513Z",
       "updated_at": "2026-06-27T09:16:05.514Z"
+    },
+    {
+      "id": 4,
+      "phone": "15107540674",
+      "credits": 20,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInBob25lIjoiMTUxMDc1NDA2NzQiLCJpYXQiOjE3ODI1NTM2NzIsImV4cCI6MTc4NTE0NTY3Mn0.GuNMX8Pt0p_MM_-kKg5f3AOzI6JKkz23NJ0DLWozR_o",
+      "created_at": "2026-06-27T09:31:06.762Z",
+      "updated_at": "2026-06-27T09:47:52.371Z"
     }
   ],
   "generations": [],
