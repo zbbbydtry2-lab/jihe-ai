@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+*.db
+*.db-shm
+*.db-wal
+uploads/*
+!uploads/.gitkeep
+jihegeo-clone/
+jihegeo_*
+test.txt
+_writer.js
+page.html
+content_b64.txt

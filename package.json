@@ -1,0 +1,16 @@
+{
+  "name": "jihe-ai",
+  "version": "1.0.0",
+  "description": "几何AI - 一站式AI电商视觉工具平台",
+  "scripts": {
+    "start": "cd backend && npm install && node src/index.js",
+    "build": "cd frontend && npm install && npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "ngrok": "^5.0.0-beta.2",
+    "playwright": "^1.61.1"
+  }
+}

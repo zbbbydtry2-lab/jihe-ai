@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: jihe-ai
+    env: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: node src/index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        value: jihe-ai-secret-key-2024-prod
+      - key: PORT
+        value: "10000"
